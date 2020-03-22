@@ -257,20 +257,6 @@ namespace Calculadoral_Ligas
                     percent[i] = 100 - total;
 
                     break;
-
-                    /*switch (mat.Length)
-                    {
-                        case 2:
-                            percent[i] = 100 - (percent[i - 1]);
-                            break;
-                        case 3:
-                            percent[i] = 100 - (percent[i - 1] + percent[i - 2]);
-                            break;
-                        case 4:
-                            percent[i] = 100 - (percent[i - 1] + percent[i - 2] + percent[i - 3]);
-                            break;
-                    }
-                    break;*/
                 }
 
                 Console.WriteLine("De: " + x[0] + "% A " + x[1] + "%");
