@@ -1,6 +1,5 @@
 using System;
 using System.Collections;
-using System.Text;
 
 namespace Calculadoral_Ligas
 {
@@ -59,7 +58,7 @@ namespace Calculadoral_Ligas
 
                     alloy.mname().Add("Cobre", "Cobre");
                     alloy.mname().Add("Ouro", "Ouro");
-                    alloy.mname().Add("Prata", "Prata");
+                    alloy.mname().Add("Prata", "Tetraedita");
                 }
                 else if (i == 2)
                 {
@@ -91,7 +90,7 @@ namespace Calculadoral_Ligas
                     alloy.addMaterial("Prata", "60/80");
 
                     alloy.mname().Add("Cobre", "Cobre");
-                    alloy.mname().Add("Prata", "Prata");
+                    alloy.mname().Add("Prata", "Tetraedita");
                 }
                 else if (i == 6)
                 {
@@ -107,6 +106,8 @@ namespace Calculadoral_Ligas
                     alloy.addMaterial("Bronze de Bismuto", "10/15");
                     alloy.addMaterial("Prata", "10/15");
                     alloy.addMaterial("Aço", "20/25");
+
+                    alloy.mname().Add("Prata", "Tetraedita");
                 }
                 else if (i == 8)
                 {
@@ -223,9 +224,11 @@ namespace Calculadoral_Ligas
                     case 2:
                         if (mat.Length == 4)
                         {
-                            if (100 - (percent[i - 1] + percent[i - 2]) <= 50 && 100 - (percent[i - 1] + percent[i - 2]) >= 40)
+                            int sum = (100 - (percent[i - 1]) + 100 - (percent[i - 2]));
+
+                            if(sum <= 50 && sum >= 40)
                             {
-                                percent[2] = 100 - (percent[i - 1] + percent[i - 2]) - 25;
+                                percent[2] = sum - 25;
                                 percent[3] = 25;
 
                                 stop = true;
@@ -244,7 +247,18 @@ namespace Calculadoral_Ligas
 
                 if (i == mat.Length - 1)
                 {
-                    switch (mat.Length)
+                    int total = 0;
+
+                    for(int j = 0; j < mat.Length; j++)
+                    {
+                        total += percent[i - j];
+                    }
+
+                    percent[i] = 100 - total;
+
+                    break;
+
+                    /*switch (mat.Length)
                     {
                         case 2:
                             percent[i] = 100 - (percent[i - 1]);
@@ -256,7 +270,7 @@ namespace Calculadoral_Ligas
                             percent[i] = 100 - (percent[i - 1] + percent[i - 2] + percent[i - 3]);
                             break;
                     }
-                    break;
+                    break;*/
                 }
 
                 Console.WriteLine("De: " + x[0] + "% A " + x[1] + "%");
@@ -285,7 +299,7 @@ namespace Calculadoral_Ligas
 
             for (int i = 0; i < percent.Length; i++)
             {
-                materials[i] = barras * (percent[i] / 100.0);
+                materials[i] = Math.Round(barras * (percent[i] / 100.0), 2);
             }
 
             for (int i = 0; i < names.Length; i++)
@@ -307,13 +321,11 @@ namespace Calculadoral_Ligas
                 }
                 else
                 {
-                    Console.WriteLine("Minério de " + selected.mineralName(name) + " rico: " + (materials[i] / 35) + " Unidades");
-                    Console.WriteLine("Minério de " + selected.mineralName(name) + " normal: " + (materials[i] / 25) + " Unidades");
-                    Console.WriteLine("Minério de " + selected.mineralName(name) + " pobre: " + (materials[i] / 15) + " Unidades");
+                    Console.WriteLine("Minério de " + selected.mineralName(name) + " rico: " + Math.Round((materials[i] / 35), 2) + " Unidades");
+                    Console.WriteLine("Minério de " + selected.mineralName(name) + " normal: " + Math.Round((materials[i] / 25), 2) + " Unidades");
+                    Console.WriteLine("Minério de " + selected.mineralName(name) + " pobre: " + Math.Round((materials[i] / 15), 2) + " Unidades");
 
                     Console.WriteLine(" ");
-
-
                 }
             }
 
