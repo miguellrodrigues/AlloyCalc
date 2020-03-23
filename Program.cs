@@ -301,7 +301,7 @@ namespace Calculadoral_Ligas
                 
                 if (name.Contains("Aço") || name.Contains("Bronze") || name.Contains("Rosa") || name.Contains("ã"))
                 {
-                    Console.WriteLine("Barra's de " + name + " " + (materials[i] / 100) + " Unidades");
+                    Console.WriteLine("Barra's de " + name + ": " + (materials[i] / 100) + " Unidades");
 
                     Console.WriteLine(" ");
                 }
