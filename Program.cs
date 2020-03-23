@@ -285,7 +285,7 @@ namespace Calculadoral_Ligas
 
             for (int i = 0; i < percent.Length; i++)
             {
-                materials[i] = Math.Round(barras * (percent[i] / 100.0), 2);
+                materials[i] = Math.Round(barras * (percent[i] / 100.0), 3);
             }
 
             for (int i = 0; i < names.Length; i++)
@@ -307,9 +307,9 @@ namespace Calculadoral_Ligas
                 }
                 else
                 {
-                    Console.WriteLine("Minério de " + selected.mineralName(name) + " rico: " + Math.Round((materials[i] / 35), 2) + " Unidades");
-                    Console.WriteLine("Minério de " + selected.mineralName(name) + " normal: " + Math.Round((materials[i] / 25), 2) + " Unidades");
-                    Console.WriteLine("Minério de " + selected.mineralName(name) + " pobre: " + Math.Round((materials[i] / 15), 2) + " Unidades");
+                    Console.WriteLine("Minério de " + selected.mineralName(name) + " rico: " + Math.Round((materials[i] / 35), 3) + " Unidades");
+                    Console.WriteLine("Minério de " + selected.mineralName(name) + " normal: " + Math.Round((materials[i] / 25), 3) + " Unidades");
+                    Console.WriteLine("Minério de " + selected.mineralName(name) + " pobre: " + Math.Round((materials[i] / 15), 3) + " Unidades");
 
                     Console.WriteLine(" ");
                 }
