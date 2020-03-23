@@ -77,11 +77,6 @@ namespace Calculadoral_Ligas
             return retorno;
         }
 
-        public int getMaterialSize(string key)
-        {
-            return materials[key].Length;
-        }
-
         public string mineralName(string key)
         {
             return correspondente[key];
