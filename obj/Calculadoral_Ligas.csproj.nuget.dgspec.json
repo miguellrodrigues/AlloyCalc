@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Storm\\Documents\\Cloned\\AlloyCalc\\Calculadoral_Ligas.csproj": {}
+    "C:\\Users\\Storm\\Documents\\projects\\alloycalc\\AlloyCalc\\Calculadoral_Ligas.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Storm\\Documents\\Cloned\\AlloyCalc\\Calculadoral_Ligas.csproj": {
+    "C:\\Users\\Storm\\Documents\\projects\\alloycalc\\AlloyCalc\\Calculadoral_Ligas.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Storm\\Documents\\Cloned\\AlloyCalc\\Calculadoral_Ligas.csproj",
+        "projectUniqueName": "C:\\Users\\Storm\\Documents\\projects\\alloycalc\\AlloyCalc\\Calculadoral_Ligas.csproj",
         "projectName": "Calculadoral_Ligas",
-        "projectPath": "C:\\Users\\Storm\\Documents\\Cloned\\AlloyCalc\\Calculadoral_Ligas.csproj",
+        "projectPath": "C:\\Users\\Storm\\Documents\\projects\\alloycalc\\AlloyCalc\\Calculadoral_Ligas.csproj",
         "packagesPath": "C:\\Users\\Storm\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Storm\\Documents\\Cloned\\AlloyCalc\\obj\\",
+        "outputPath": "C:\\Users\\Storm\\Documents\\projects\\alloycalc\\AlloyCalc\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Storm\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -48,15 +48,15 @@
           "downloadDependencies": [
             {
               "name": "Microsoft.AspNetCore.App.Runtime.win-x64",
-              "version": "[3.1.2, 3.1.2]"
+              "version": "[3.1.8, 3.1.8]"
             },
             {
               "name": "Microsoft.NETCore.App.Runtime.win-x64",
-              "version": "[3.1.2, 3.1.2]"
+              "version": "[3.1.8, 3.1.8]"
             },
             {
               "name": "Microsoft.WindowsDesktop.App.Runtime.win-x64",
-              "version": "[3.1.2, 3.1.2]"
+              "version": "[3.1.8, 3.1.8]"
             }
           ],
           "frameworkReferences": {
@@ -64,13 +64,10 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.200\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
         }
       },
       "runtimes": {
-        "win-x64": {
-          "#import": []
-        },
         "win10-x64": {
           "#import": []
         }

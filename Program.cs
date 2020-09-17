@@ -226,7 +226,7 @@ namespace Calculadoral_Ligas
                         {
                             int sum = (100 - (percent[i - 1]) + 100 - (percent[i - 2]));
 
-                            if(sum <= 50 && sum >= 40)
+                            if (sum <= 50 && sum >= 40)
                             {
                                 percent[2] = sum - 25;
                                 percent[3] = 25;
@@ -249,7 +249,7 @@ namespace Calculadoral_Ligas
                 {
                     int total = 0;
 
-                    for(int j = 0; j < mat.Length; j++)
+                    for (int j = 0; j < mat.Length; j++)
                     {
                         total += percent[i - j];
                     }
@@ -298,7 +298,7 @@ namespace Calculadoral_Ligas
             for (int i = 0; i < names.Length; i++)
             {
                 string name = names[i];
-                
+
                 if (name.Contains("Aço") || name.Contains("Bronze") || name.Contains("Rosa") || name.Contains("ã"))
                 {
                     Console.WriteLine("Barra's de " + name + ": " + (materials[i] / 100) + " Unidades");
@@ -307,9 +307,24 @@ namespace Calculadoral_Ligas
                 }
                 else
                 {
-                    Console.WriteLine("Minério de " + selected.mineralName(name) + " rico: " + Math.Round((materials[i] / 35), 3) + " Unidades");
-                    Console.WriteLine("Minério de " + selected.mineralName(name) + " normal: " + Math.Round((materials[i] / 25), 3) + " Unidades");
-                    Console.WriteLine("Minério de " + selected.mineralName(name) + " pobre: " + Math.Round((materials[i] / 15), 3) + " Unidades");
+                    Int64[] values = { 35, 25, 15, 5, 1 };
+
+                    Int64[] qtd = new Int64[5];
+
+                    string[] nomes = { "rico", "normal", "pobre", "pepita", "nugget" };
+
+                    double value = materials[i];
+
+                    for (int z = 0; z < 5; z++)
+                    {
+                        qtd[z] = (Int64) (value / values[z]);
+                        value -= (qtd[z] * values[z]);
+                    }
+
+                    for (int z = 0; z < 5; z++)
+                    {
+                        Console.WriteLine("Minério de " + selected.mineralName(name) + " " + nomes[z] + " " + qtd[z] + " Unidade`s");
+                    }
 
                     Console.WriteLine(" ");
                 }

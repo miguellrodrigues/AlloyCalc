@@ -1,0 +1,13 @@
+C:\Users\Storm\Documents\projects\alloycalc\AlloyCalc\obj\Debug\netcoreapp3.1\Calculadoral_Ligas.csprojAssemblyReference.cache
+C:\Users\Storm\Documents\projects\alloycalc\AlloyCalc\obj\Debug\netcoreapp3.1\Calculadoral_Ligas.AssemblyInfoInputs.cache
+C:\Users\Storm\Documents\projects\alloycalc\AlloyCalc\obj\Debug\netcoreapp3.1\Calculadoral_Ligas.AssemblyInfo.cs
+C:\Users\Storm\Documents\projects\alloycalc\AlloyCalc\obj\Debug\netcoreapp3.1\Calculadoral_Ligas.csproj.CoreCompileInputs.cache
+C:\Users\Storm\Documents\projects\alloycalc\AlloyCalc\bin\Debug\netcoreapp3.1\Calculadoral_Ligas.exe
+C:\Users\Storm\Documents\projects\alloycalc\AlloyCalc\bin\Debug\netcoreapp3.1\Calculadoral_Ligas.deps.json
+C:\Users\Storm\Documents\projects\alloycalc\AlloyCalc\bin\Debug\netcoreapp3.1\Calculadoral_Ligas.runtimeconfig.json
+C:\Users\Storm\Documents\projects\alloycalc\AlloyCalc\bin\Debug\netcoreapp3.1\Calculadoral_Ligas.runtimeconfig.dev.json
+C:\Users\Storm\Documents\projects\alloycalc\AlloyCalc\bin\Debug\netcoreapp3.1\Calculadoral_Ligas.dll
+C:\Users\Storm\Documents\projects\alloycalc\AlloyCalc\bin\Debug\netcoreapp3.1\Calculadoral_Ligas.pdb
+C:\Users\Storm\Documents\projects\alloycalc\AlloyCalc\obj\Debug\netcoreapp3.1\Calculadoral_Ligas.dll
+C:\Users\Storm\Documents\projects\alloycalc\AlloyCalc\obj\Debug\netcoreapp3.1\Calculadoral_Ligas.pdb
+C:\Users\Storm\Documents\projects\alloycalc\AlloyCalc\obj\Debug\netcoreapp3.1\Calculadoral_Ligas.genruntimeconfig.cache
